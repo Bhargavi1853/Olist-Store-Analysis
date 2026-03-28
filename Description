@@ -1,0 +1,200 @@
+# Olist-Store-Analysis
+
+# Project Goals
+
+The main objective of this project is to analyze the **Olist e-commerce dataset** to extract meaningful business insights that can support decision-making.
+
+### 🔹 Core Goals
+
+1. **Understand Customer Behavior**
+
+   * Identify how customers purchase (weekday vs weekend trends)
+   * Analyze spending patterns across cities
+
+2. **Evaluate Payment Trends**
+
+   * Determine preferred payment methods
+   * Understand how payment type relates to customer satisfaction
+
+3. **Measure Delivery Performance**
+
+   * Calculate delivery time across categories
+   * Identify delays and inefficiencies
+
+4. **Analyze Customer Satisfaction**
+
+   * Study review scores
+   * Find factors affecting ratings (like delivery time)
+
+5. **Generate Business Insights**
+
+   * Provide actionable insights for:
+
+     * Marketing strategies
+     * Logistics improvement
+     * Customer retention
+
+---
+
+#  Step-by-Step Process
+
+## 1. Data Collection
+
+* Gathered multiple datasets related to an e-commerce platform:
+
+  * Customers
+  * Orders
+  * Products
+  * Payments
+  * Reviews
+  * Sellers
+  * Geolocation
+
+ **Goal:**
+Combine different aspects of the business (customers, orders, payments, logistics) into one analytical system.
+
+
+---
+
+## 2. Data Integration (Schema Building)
+
+* Established relationships between tables:
+
+  * Orders linked with customers
+  * Orders connected to payments and reviews
+  * Order items connected to products and sellers
+
+ **Goal:**
+Create a **relational structure** so data from multiple tables can be analyzed together instead of in isolation.
+
+<img width="1753" height="827" alt="Screenshot 2026-03-01 143544" src="https://github.com/user-attachments/assets/87766897-9d1a-48a4-9644-f92c7f186ac3" />
+
+---
+
+## 3. Data Cleaning & Preparation
+
+* Checked for:
+
+  * Missing values (especially delivery dates)
+  * Incorrect or inconsistent data formats
+* Filtered:
+
+  * Only valid and delivered orders when required
+* Ensured:
+
+  * Date columns are usable for calculations
+  * Keys match across tables
+
+ **Goal:**
+Ensure **accuracy and reliability** of analysis.
+Bad data → wrong insights.
+
+---
+
+## 4. Data Exploration
+
+* Viewed all tables and understood:
+
+  * What each column represents
+  * How tables connect
+* Identified:
+
+  * Important variables (price, payment, delivery time, review score)
+
+ **Goal:**
+Develop a **clear understanding of dataset structure** before performing analysis.
+
+---
+
+## 5. KPI Design
+
+Defined key performance indicators based on business needs:
+
+###  Sales Pattern KPI
+
+* Compare weekday vs weekend purchases
+
+###  Customer Satisfaction KPI
+
+* Count orders with high ratings (review score = 5)
+
+###  Delivery Efficiency KPI
+
+* Measure average delivery time
+
+###  Customer Value KPI
+
+* Analyze average spending by city
+
+###  Logistics Impact KPI
+
+* Study relationship between delivery time and reviews
+
+ **Goal:**
+Translate raw data into **measurable business metrics**.
+
+---
+
+## 6. Data Analysis (SQL Queries)
+
+* Performed joins across multiple tables
+* Used:
+
+  * Aggregations (SUM, AVG, COUNT)
+  * Date functions (DATEDIFF, DAYOFWEEK)
+  * Filtering (WHERE conditions)
+
+ **Goal:**
+Extract **meaningful patterns and relationships** from raw data.
+
+---
+
+## 7. Insight Generation
+
+From analysis, derived conclusions such as:
+
+* When customers purchase more
+* Which customers spend more
+* How delivery affects satisfaction
+
+ **Goal:**
+Convert results into **business insights**, not just numbers.
+
+---
+
+## 8. Data Visualization
+
+* Built dashboards using Power BI / Tableau:
+
+  * Charts for sales trends
+  * KPIs for quick metrics
+  * Graphs showing delivery vs reviews
+
+ **Goal:**
+Present data in a **clear and interactive way** for easy understanding.
+
+---
+
+## 9. Interpretation & Decision Support
+
+* Used insights to suggest:
+
+  * Improving delivery speed
+  * Focusing marketing on high-value customers
+  * Optimizing payment options
+
+ **Goal:**
+Enable **data-driven decision making**.
+
+---
+
+#  Final Outcome
+
+* Built a complete **end-to-end data analysis pipeline**
+* Transformed raw data into:
+
+  * Structured database
+  * KPIs
+  * Visual dashboards
+  * Business insights
+
